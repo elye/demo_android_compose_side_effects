@@ -20,14 +20,12 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 class SnapshotFlowActivity : BaseActivity() {
-    @ExperimentalAnimationApi
     @Composable
     override fun LoadComposable() {
         TestSnapshotFlow()
     }
 }
 
-@ExperimentalAnimationApi
 @Composable
 fun TestSnapshotFlow() {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
